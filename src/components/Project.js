@@ -6,7 +6,7 @@ export default function Project() {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type == "project]{
+        `*[_type == "project"]{
         title,
         date,
         place,
