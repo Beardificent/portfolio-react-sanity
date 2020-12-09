@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import sanityClient from "../client";
 
 export default function Post() {
+  //using groq to link postData to our Sanity posts. will review if this is accurate
   const [postData, setPost] = useState(null);
 
   useEffect(() => {
     sanityClient
       .fetch(
+          //select all types that are equal to post and gather title, slug, mainImage,...
         `*[_type == "post"]{
           title,
           slug,
@@ -35,7 +37,7 @@ export default function Post() {
               <span className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400"
                     key={index}>
                 <img
-                    src={post.mainImage.aset.url}
+                    src={post.mainImage.asset.url}
                     alt={post.mainImage.alt}
                     className={'w-full h-full rounded-r object-cover absolute'}
                 />
