@@ -11,7 +11,7 @@ export default function Project() {
         date,
         place,
         description,
-        project,
+        projectType,
         link,
         tags
         }`

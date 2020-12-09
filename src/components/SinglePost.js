@@ -54,7 +54,7 @@ export default function SinglePost() {
                   alt={singlePost.name}
                   className="w-10 h-10 rounded-full"
                 />
-                {/*to manipulate the size of the authorImage, add .width at the end of url()*/}
+                {/*to manipulate the size of the authorImage, .width, .height can all be added.*/}
                 <p className="cursive flex items-center pt-2 text-2xl">
                   {singlePost.name}
                 </p>
