@@ -26,7 +26,7 @@ export default function Project() {
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
           Welcome
         </h2>
-        <section className="grid grid-cols-2 gap-8">
+        <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projectData &&
             projectData.map((project, index) => (
               <article className="relative rounded-lg shadow-xl bg-white p-16">
