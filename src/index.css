@@ -30,6 +30,11 @@
   font-weight: 700;
 }
 
+.spiderman-bg{
+    background: url(https://raw.githubusercontent.com/Beardificent/portfolio-react-sanity/master/src/spiderman-ps4-new_1570393512.jpg) center center no-repeat;
+    background-attachment: fixed;
+}
+
 .prose img {
   margin-left: auto;
   margin-right: auto;
@@ -37,14 +42,13 @@
 }
 
 .home-name {
-  font-size: 150px;
+  font-size: 265px;
 }
 
 /*PORTFOLIO TEXT CSS*/
 .css-text {
     height: 250px;
     display: inline-block;
-    font-size: 264px;
     line-height: 100%;
     padding-left: 7px;
     -webkit-background-clip: text;

@@ -5,7 +5,7 @@ import { SocialIcon } from "react-social-icons";
 export default function NavBar() {
   return (
     <header
-      className="background-nav bg-gradient-to-b from-yellow-200 rounded-b-lg bg-bottom border-yellow-300 bg-no-repeat"
+      className="cssnavbar background-nav bg-gradient-to-b from-yellow-200 rounded-b-lg bg-bottom border-yellow-300 bg-no-repeat"
      /* style={{ backgroundImage: `url(${imageFour})`, borderRadius: `5px`}}*/
     >
       <div className="container mx-auto flex justify-between borderRadius-5">

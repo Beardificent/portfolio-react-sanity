@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client";
-import imageFive from "../spiderman-ps4-new_1570393512.jpg";
+{/*import imageFive from "../spiderman-ps4-new_1570393512.jpg";*/}
 
 export default function Post() {
   //using groq to link postData to our Sanity posts. will review if this is accurate
@@ -25,12 +25,16 @@ export default function Post() {
       .catch(console.error);
   }, []);
   return (
-    <main>
+    <main
+      className="spiderman-bg absolute w-full min-h-screen" /*className = "bg-green-100 min-h-screen"*/>
+      {/*
+          commented because we're taking the bg from thirdparty in custom css
       <img
         src={imageFive}
         alt="spiderman"
         className="absolute topZero object-cover w-full h-full"
       />
+      */}
       <section className="mt-28 container mx-auto">
         <h1 className="text-5xl flex justify-center cursive">Findings</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
