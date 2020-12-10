@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import sanityClient from "../client";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
+import imageFive from "../spiderman-ps4-new_1570393512.jpg";
 
 const builder = imageUrlBuilder(sanityClient);
 
@@ -39,8 +40,13 @@ export default function SinglePost() {
   if (!singlePost) return <div className="mt-28">Loading...</div>;
 
   return (
-    <main className="bg-grey-200 min-h-screen p-12">
-      <article className="container shadow-lg mx-auto bg-green-100">
+    <main className="bg-grey-200 min-h-screen">
+      <img
+          src={imageFive}
+          alt="spiderman"
+          className="absolute topZero object-cover w-full h-full"
+      />
+      <article className="mt-44 container shadow-lg mx-auto bg-green-100">
         <header className="relative">
           <div className="absolute h-full w-full flex items-center justify-center p-8 ">
             <div className="bg-white bg-opacity-75 rounded p-12">

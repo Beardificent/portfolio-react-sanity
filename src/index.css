@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bahiana&display=swap');
 
+
 .background-nav {
     position: absolute;
     z-index: 999;
@@ -22,6 +23,7 @@
     remove comment in order to display the h1 and H2 in selected elements;
      */
 }
+
 /* END IMAGE FIX*/
 .cursive {
   font-family: "Bahiana", cursive;
@@ -40,7 +42,7 @@
 
 /*PORTFOLIO TEXT CSS*/
 .css-text {
-    height: 200px;
+    height: 250px;
     display: inline-block;
     font-size: 264px;
     line-height: 100%;
