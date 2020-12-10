@@ -36,7 +36,7 @@ export default function NavBar() {
           <NavLink
             to="/about"
             className="inflex-flex items-center py-6 px-3 mr-4 text-black-200 hover:text-white-500 text-4xl font-bold cursive tracking-widest"
-            activeClassName="text-pink-700 bg-white opacity-60"
+            activeClassName="text-white bg-pink-700 opacity-60"
           >
             About Me
           </NavLink>

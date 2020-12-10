@@ -36,7 +36,7 @@ export default function SinglePost() {
       .catch(console.error);
   }, [slug]);
 
-  if (!singlePost) return <div class="loading">Loading...</div>;
+  if (!singlePost) return <div className="mt-28">Loading...</div>;
 
   return (
     <main className="bg-grey-200 min-h-screen p-12">

@@ -27,7 +27,8 @@ export default function Project() {
           alt="spiderman"
           className="absolute topZero object-cover w-full h-full"
       />
-      <section className="container mx-auto">
+      <section className="mt-28 container mx-auto">
+          {/*h1 & h2 are not visible on page, this keeps css in check. to display uncomment in index.css*/}
         <h1 className="text-5xl flex justify-center cursive">Project</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
           Welcome
@@ -45,12 +46,13 @@ export default function Project() {
                   >
                     {project.title}
                   </a>
-                </h3>
+                </h3><br/>
                 <div className="text-gray-500 text-xs space-x-4">
-                  <span>
+                    <br/><span>
                     <strong className="font-bold">Finished on</strong>:{" "}
                     {new Date(project.date).toLocaleDateString()}
                   </span>
+                    <br/>
                   <span>
                     <strong className="font-bold">Company</strong>:{" "}
                     {project.place}
@@ -68,10 +70,10 @@ export default function Project() {
                     target="_blank"
                     className="text-red-500 font-bold hover:underline hover:text-red-400"
                   >
-                    View The Project{" "}
-                    <span role="img" aria-label="right-pointer" className="emoji">
+                    To repository{" "}
+                      {/*<span role="img" aria-label="right-pointer" className="emoji">
                       🦥
-                    </span>
+                    </span>*/}
                   </a>
                 </div>
               </article>

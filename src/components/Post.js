@@ -31,15 +31,15 @@ export default function Post() {
         alt="spiderman"
         className="absolute topZero object-cover w-full h-full"
       />
-      <section className="container mx-auto">
-        <h1 className="mt-16 text-5xl flex justify-center cursive">Findings</h1>
+      <section className="mt-28 container mx-auto">
+        <h1 className="text-5xl flex justify-center cursive">Findings</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
           {/*Room for a subtitle*/}
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {postData &&
             postData.map((post, index) => (
-              <article>
+              <article className="relative rounded-lg shadow-xl bg-transparent p-8">
                 <Link to={"/post/" + post.slug.current} key={post.slug.current}>
                   <span
                     className="block h-64 relative rounded shadow leading-snug bg-white border-l-8 border-green-400"
