@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
-import imageFour from "../wallpapermarveldc-removebg.png";
 
 export default function NavBar() {
   return (
