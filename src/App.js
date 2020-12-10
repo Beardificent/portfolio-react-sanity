@@ -14,7 +14,6 @@ return (
         <Switch>
             <Route component={Home} path='/' exact />
             <Route component={About} path='/about' />
-            {/*single post goes above Post because: if it cannot find a single post, go to post.js*/}
             <Route component={SinglePost} path='/post/:slug' />
             <Route component={Post} path='/post' />
             <Route component={Project} path='/project' />

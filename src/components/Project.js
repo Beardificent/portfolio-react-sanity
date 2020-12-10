@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client";
+import imageSix from "../spiderman-ps4-new_1570393512.jpg";
 
 export default function Project() {
   const [projectData, setProjectData] = useState(null);
@@ -20,7 +21,12 @@ export default function Project() {
       .catch(console.error);
   }, []);
   return (
-    <main className="bg-green-100 min-h-screen p-12">
+    <main>
+      <img
+          src={imageSix}
+          alt="spiderman"
+          className="absolute topZero object-cover w-full h-full"
+      />
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive">Project</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
@@ -63,8 +69,8 @@ export default function Project() {
                     className="text-red-500 font-bold hover:underline hover:text-red-400"
                   >
                     View The Project{" "}
-                    <span role="img" aria-label="right-pointer">
-                      👉
+                    <span role="img" aria-label="right-pointer" className="emoji">
+                      🦥
                     </span>
                   </a>
                 </div>

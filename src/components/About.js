@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client";
-import imageTwo from "../firewatch-bg-day.png";
+import imageTwo from "../spiderman-astronaut-suit-4k_1557260144.jpg";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 import imageLoad from "../pixil-frame-0.png";
+
 
 const builder = imageUrlBuilder(sanityClient);
 
@@ -45,7 +46,7 @@ export default function About() {
           />
           <div className="text-lg flex flex-col justify-center">
             <h1 className="cursive text-6xl text-green-300 mb-4">
-              Hello there. I'm{" "}
+              {/*Hello there!*/}{" "}
               <span className="text-green-100">{author.name}</span>
             </h1>
             <div className="prose lg:prose-xl text-white">
