@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import sanityClient from "../client";
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
-import imageFive from "../spiderman-ps4-new_1570393512.jpg";
 
 const builder = imageUrlBuilder(sanityClient);
 

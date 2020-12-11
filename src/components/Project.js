@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client";
-{/*import imageSix from "../spiderman-ps4-new_1570393512.jpg";*/}
 
 export default function Project() {
   const [projectData, setProjectData] = useState(null);

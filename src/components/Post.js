@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../client";
-{/*import imageFive from "../spiderman-ps4-new_1570393512.jpg";*/}
 
 export default function Post() {
   //using groq to link postData to our Sanity posts. will review if this is accurate
