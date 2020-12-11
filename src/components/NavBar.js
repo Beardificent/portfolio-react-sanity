@@ -43,7 +43,8 @@ export default function NavBar() {
         <div className="inline-flex py-3 px-3 my-6 socialLogo">
           <SocialIcon
             url="https://www.linkedin.com/in/cis-magito-0a110286/"
-            className="mr-4"
+            className="mr-4 "
+            rel="noopener noreferrer"
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
@@ -51,6 +52,7 @@ export default function NavBar() {
           <SocialIcon
             url="https://github.com/Beardificent"
             className="mr-4"
+            rel="noopener noreferrer"
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
@@ -58,6 +60,7 @@ export default function NavBar() {
           <SocialIcon
             url="https://www.instagram.com/beardificent/"
             className="mr-4"
+            rel="noopener noreferrer"
             target="_blank"
             fgColor="#fff"
             style={{ height: 35, width: 35 }}
