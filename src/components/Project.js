@@ -32,16 +32,15 @@ export default function Project() {
       />
       */}
       <section className="mt-28 container mx-auto">
-        {/*h1 & h2 are not visible on page, this keeps css in check. to display uncomment in index.css*/}
-        <h1 className="text-5xl flex justify-center cursive">Project</h1>
+        <h1 className="text-5xl flex justify-center cursive ">{" "}</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
-          Welcome
+          {" "}
         </h2>
         <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projectData &&
             projectData.map((project, index) => (
-              <article className=" relative rounded-lg shadow-xl bg-white p-8">
-                <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
+              <article className="mt-8 relative rounded-lg shadow-xl bg-white p-8">
+                <h3 className="amatic text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
                   <a
                     href={project.link}
                     alt={project.title}
@@ -67,14 +66,14 @@ export default function Project() {
                     <strong className="font-bold">Type</strong>:{" "}
                     {project.projectType}
                   </span>
-                  <p className="my-6 text-lg text-gray-700 leading-relaxed">
+                  <p className="projectDesc my-6 text-lg text-gray-700 leading-relaxed">
                     {project.description}
                   </p>
                   <a
                     href={project.link}
                     rel="noopener noreferrer"
                     target="_blank"
-                    className="text-red-500 font-bold hover:underline hover:text-red-400"
+                    className=" repositoryLink text-red-500 font-bold hover:underline hover:text-red-400"
                   >
                     To repository{" "}
                     {/*<span role="img" aria-label="right-pointer" className="emoji">

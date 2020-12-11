@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import sanityClient from "../client";
-import imageTwo from "../spiderman-astronaut-suit-4k_1557260144.jpg";
+/*import imageTwo from "../spiderman-astronaut-suit-4k_1557260144.jpg";*/
 import imageUrlBuilder from "@sanity/image-url";
 import BlockContent from "@sanity/block-content-to-react";
 import imageLoad from "../pixil-frame-0.png";
@@ -35,10 +35,10 @@ export default function About() {
       </div>
     );
   return (
-    <main className="relative ">
-      <img src={imageTwo} alt="spiderman" className="absolute object-cover w-full" />
+    <main className="relative spiderman-bg ">
+      {/*<img src={imageTwo} alt="spiderman" className="absolute object-cover w-full" />*/}
       <div className="p-10 lg:pt-48 container mx-auto relative">
-        <section className="bg-pink-200 bg-opacity-60 rounded-lg shadow-2xl lg:flex p-20">
+        <section className=" bg-pink-200 bg-opacity-60 rounded-lg shadow-2xl lg:flex p-20 pinkBox">
           <img
             src={urlFor(author.authorImage).url()}
             className="rounded w-32 h-32 lg:w-64 lg:h-64 mr-8"
@@ -47,7 +47,7 @@ export default function About() {
           <div className="text-lg flex flex-col justify-center">
             <h1 className="cursive text-6xl text-purple-900 mb-4">
               {/*Hello there!*/}{" "}
-              <span className="text-gray-900">{author.name}</span>
+              <span className="amatic text-gray-900">{author.name}</span>
             </h1>
             <div className="prose lg:prose-xl text-gray-700">
               <BlockContent

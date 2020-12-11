@@ -34,7 +34,7 @@ export default function Post() {
         className="absolute topZero object-cover w-full h-full"
       />
       */}
-      <section className="my-28 container mx-auto">
+      <section className="mt-28 container mx-auto">
         <h1 className="text-5xl flex justify-center cursive">Findings</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
           {/*Room for a subtitle*/}

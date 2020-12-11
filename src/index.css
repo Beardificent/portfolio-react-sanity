@@ -5,38 +5,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Bahiana&display=swap');
 
 
-
-body{
+body {
     overflow-x: hidden;
 }
+
 .background-nav {
     position: absolute;
     z-index: 999;
     top: 0;
     width: 100vw;
-  }
-
-
-.text-outline{
-    text-shadow: black 1px 1px;
-;
-}
-/*BG IMAGE FIX POST & ABOUT*/
-.topZero {
-    top:0;
-    /*
-    z-index: -1;
-    remove comment in order to display the h1 and H2 in selected elements;
-     */
 }
 
-/* END IMAGE FIX*/
+
+.text-outline {
+    text-shadow: black 1px 1px;;
+}
+.amatic {
+    font-family: "Amatic SC", cursive;
+    font-weight: 700;
+}
+
 .cursive {
-  font-family: "Bahiana", cursive;
-  font-weight: 700;
+    font-family: "Bahiana", cursive;
+    font-weight: 700;
 }
 
-.spiderman-bg{
+.projectDesc {
+    background-color: rgba(27, 188, 210, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Arial Narrow", cursive;
+}
+
+.repositoryLink {
+    bottom: 4%;
+    position: fixed;
+}
+.spiderman-bg {
     background: url(https://raw.githubusercontent.com/Beardificent/portfolio-react-sanity/master/src/spiderman-ps4-new_1570393512.jpg) center center no-repeat;
     background-attachment: fixed;
     object-fit: cover;
@@ -44,14 +49,22 @@ body{
     min-height: 100vh;
 }
 
+.about-bg {
+    background: url(https://raw.githubusercontent.com/Beardificent/portfolio-react-sanity/master/src/spiderman-astronaut-suit-4k_1557260144.jpg);
+    background-attachment: fixed;
+    object-fit: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
 .prose img {
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
 }
 
 .home-name {
-  font-size: 265px;
+    font-size: 265px;
 }
 
 /*PORTFOLIO TEXT CSS*/
@@ -86,4 +99,22 @@ body{
         font-size: 265px;
     }
 }
+@media only screen and (max-width: 415px) {
+
+    .cursive{
+        font-size: 20px;
+        text-align: center;
+    }
+    .socialLogo{
+        display: none;
+    }
+
+    .css-text{
+        margin-top: 50%;
+    }
+    .pinkBox{
+        margin-top: 30%;
+    }
+}
+
 /* END CSS PORTFOLIO TEXT*/

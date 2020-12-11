@@ -48,7 +48,7 @@ export default function SinglePost() {
         className="absolute topZero object-cover w-full h-full"
       />
       */}
-      <article className="mt-44 container shadow-lg mx-auto bg-green-100">
+      <article className="mt-44 container shadow-lg mx-auto bg-gradient-to-t from-yellow-200">
         <header className="relative">
           <div className="absolute h-full w-full flex items-center justify-center p-8 ">
             <div className="bg-white bg-opacity-75 rounded p-12">

@@ -19,18 +19,18 @@ export default function NavBar() {
             Home
           </NavLink>
           <NavLink
+              to="/project"
+              className="inflex-flex items-center py-6 px-3 mr-4 text-black-200 hover:text-white-500 text-4xl font-bold cursive tracking-widest"
+              activeClassName="text-white text-outline bg-pink-700 opacity-60"
+          >
+            Projects
+          </NavLink>
+          <NavLink
             to="/post"
             className="inflex-flex items-center py-6 px-3 mr-4 text-black-200 hover:text-white-500 text-4xl font-bold cursive tracking-widest"
             activeClassName="text-white text-outline bg-pink-700 opacity-60"
           >
             Post
-          </NavLink>
-          <NavLink
-            to="/project"
-            className="inflex-flex items-center py-6 px-3 mr-4 text-black-200 hover:text-white-500 text-4xl font-bold cursive tracking-widest"
-            activeClassName="text-white text-outline bg-pink-700 opacity-60"
-          >
-            Projects
           </NavLink>
           <NavLink
             to="/about"
@@ -40,7 +40,7 @@ export default function NavBar() {
             About Me
           </NavLink>
         </nav>
-        <div className="inline-flex py-3 px-3 my-6">
+        <div className="inline-flex py-3 px-3 my-6 socialLogo">
           <SocialIcon
             url="https://www.linkedin.com/in/cis-magito-0a110286/"
             className="mr-4"
