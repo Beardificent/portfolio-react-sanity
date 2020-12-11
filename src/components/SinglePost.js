@@ -40,12 +40,15 @@ export default function SinglePost() {
   if (!singlePost) return <div className="mt-28">Loading...</div>;
 
   return (
-    <main className="bg-grey-200 min-h-screen">
+    <main className="spiderman-bg absolute w-full min-h-screen" /*className = "bg-green-100 min-h-screen"*/>
+      {/*
+          commented because we're taking the bg from thirdparty in custom css
       <img
-          src={imageFive}
-          alt="spiderman"
-          className="absolute topZero object-cover w-full h-full"
+        src={imageFive}
+        alt="spiderman"
+        className="absolute topZero object-cover w-full h-full"
       />
+      */}
       <article className="mt-44 container shadow-lg mx-auto bg-green-100">
         <header className="relative">
           <div className="absolute h-full w-full flex items-center justify-center p-8 ">

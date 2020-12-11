@@ -10,7 +10,7 @@ export default function Home() {
         className="absolute object-cover w-full h-full"
       />
       <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
-        <h1 className="text-bigtext font-bold text-outline cursive leading-none lg:leading-snug">
+        <h1 className="home-name font-bold text-outline cursive leading-none lg:leading-snug">
           {" "}
           <div className="css-text text-1">P</div>
           <div className="css-text text-2">O</div>

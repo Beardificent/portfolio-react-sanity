@@ -26,7 +26,7 @@ export default function Post() {
   }, []);
   return (
     <main
-      className="spiderman-bg absolute w-full min-h-screen" /*className = "bg-green-100 min-h-screen"*/>
+      className="spiderman-bg absolute w-full" /*className = "bg-green-100 min-h-screen"*/>
       {/*
           commented because we're taking the bg from thirdparty in custom css
       <img
@@ -35,7 +35,7 @@ export default function Post() {
         className="absolute topZero object-cover w-full h-full"
       />
       */}
-      <section className="mt-28 container mx-auto">
+      <section className="my-28 container mx-auto">
         <h1 className="text-5xl flex justify-center cursive">Findings</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
           {/*Room for a subtitle*/}

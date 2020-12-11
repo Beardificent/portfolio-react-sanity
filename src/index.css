@@ -1,15 +1,21 @@
+@import "reset.css";
 @import url('https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css');
 @import url('https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bahiana&display=swap');
 
 
+
+body{
+    overflow-x: hidden;
+}
 .background-nav {
     position: absolute;
     z-index: 999;
     top: 0;
-    width: 100%;
+    width: 100vw;
   }
+
 
 .text-outline{
     text-shadow: black 1px 1px;
@@ -33,6 +39,9 @@
 .spiderman-bg{
     background: url(https://raw.githubusercontent.com/Beardificent/portfolio-react-sanity/master/src/spiderman-ps4-new_1570393512.jpg) center center no-repeat;
     background-attachment: fixed;
+    object-fit: cover;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .prose img {

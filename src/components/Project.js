@@ -22,7 +22,7 @@ export default function Project() {
   }, []);
   return (
     <main
-      className="spiderman-bg absolute w-full" /*className = "bg-green-100 min-h-screen"*/
+      className="spiderman-bg absolute w-100" /*className = "bg-green-100 min-h-screen"*/
     >
       {/* 
         commented because we're taking the bg from thirdparty in custom css
@@ -41,7 +41,7 @@ export default function Project() {
         <section className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projectData &&
             projectData.map((project, index) => (
-              <article className=" relative rounded-lg shadow-xl bg-white p-8 ">
+              <article className=" relative rounded-lg shadow-xl bg-white p-8">
                 <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
                   <a
                     href={project.link}
@@ -53,7 +53,7 @@ export default function Project() {
                   </a>
                 </h3>
                 <br />
-                <div className="text-gray-500 text-xs space-x-4">
+                <div className="text-gray-500 text-xs space-x-4 ">
                   <br />
                   <span>
                     <strong className="font-bold">Finished on</strong>:{" "}
